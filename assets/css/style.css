@@ -23,18 +23,18 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  --hue: 303;
+  --hue: 302;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
+  --base-color: hsl(var(--hue) 45% 57%);
   --base-color-second: hsl(var(--hue) 65% 88%);
   --base-color-alt: hsl(var(--hue) 57% 53%);
-  --title-color: hsl(var(--hue) 41% 10%);
-  --text-color: hsl(0 0% 46%);
+  --title-color: rgb(37, 37, 37);
+  --text-color: rgb(14, 13, 13);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
 
   /* fonts */
-  --title-font-size: 1.875rem;
+  --title-font-size: 1.600rem;
   --subtitle-font-size: 1rem;
 
   --title-font: 'Poppins', sans-serif;
@@ -434,6 +434,30 @@ nav.show div.icon-close {
   background: var(--base-color);
 }
 
+/* =========== Hórario ============== */
+
+.section#time {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+#time .grid {
+  gap: 2rem;
+}
+
+#time .text ul li {
+  font-size: 1rem;
+  text-align: left;
+}
+
+#time .text ul span {
+  color: var(--base-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-right: 10px;
+}
+
 /*====  CONTACT ============================ */
 #contact .grid {
   gap: 4rem;
@@ -626,6 +650,25 @@ footer .social a:hover {
     margin-right: auto;
   }
 
+  /* open time */
+
+  #time .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #time .grid {
+    gap: 1rem !important;
+  }
+
+  #time .text h2 {
+    text-align: center;
+  }
+
+  #time .text ul {
+    text-align: center;
+  }
+
   /* contact */
   #contact .container {
     grid-auto-flow: column;
@@ -644,7 +687,7 @@ footer .social a:hover {
   footer .container {
     grid-auto-flow: column;
     align-items: center;
-    justify-content: space-between;
+   
   }
 
   footer .logo {
